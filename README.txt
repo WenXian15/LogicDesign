@@ -12,3 +12,7 @@ logic [x][y] some_variable // packed
 - Combined array size of x*y.  x number of some_variable with width y.
 
 Link : https://www.chipverify.com/systemverilog/systemverilog-arrays
+
+
+Verilog conditional hardware based on parameter value
+https://stackoverflow.com/questions/52061466/verilog-conditional-hardware-based-on-parameter-value
