@@ -1,0 +1,7 @@
+Elastic Pipelines
+1. skid buffer 
+
+CDC (Clock Domain Crossing)
+CDC Bit Synchronizer
+CDC Word Synchronizer
+CDC FIFO Buffer
