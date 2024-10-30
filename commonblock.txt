@@ -2,6 +2,11 @@ Elastic Pipelines
 1. skid buffer 
 
 CDC (Clock Domain Crossing)
-CDC Bit Synchronizer
-CDC Word Synchronizer
-CDC FIFO Buffer
+1. CDC Bit Synchronizer
+2. CDC Word Synchronizer
+3. CDC FIFO Buffer
+
+
+Pulse Logic
+1. Pulse Latch
+Capture a high pulse and holds i
