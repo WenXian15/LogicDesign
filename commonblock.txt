@@ -10,3 +10,8 @@ CDC (Clock Domain Crossing)
 Pulse Logic
 1. Pulse Latch
 Capture a high pulse and holds i
+
+
+Synchronous Logic
+1. Watchdog Timer 
+- Raises an alarm signal if not "pinged" before a given number of cycles have passed since the last ping or since start. This can be used as a simple event timer, or as part of a hardware failsafe.
