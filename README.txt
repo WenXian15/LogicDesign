@@ -3,10 +3,10 @@ https://github.com/mbits-mirafra/digitalDesignCourse/wiki
 
 # LogicDesign
 
-Operator
-logical vs bit-wise
-reduction
-https://www.google.com/search?client=firefox-b-d&sca_esv=be4c59a23fd2350a&q=systemverilog+bitwise+or&udm=2&fbs=AEQNm0DYVld7NGDZ8Pi819Yg8r6em07j6rW9d2jUMtr8MB7hthlxj_a5JB7GtKl9Rvi8UOrX6vOKeE8ctU8C4v5SDrHEsrgUOOFp5HvlkBZf4yVP83YajKnrlhAJvHG8uQnJWlvuYz8LvE_lwESvEPu-1v94fKd9xhS49UTuNSe7CMY7I5AuGmdDN0lv5iId0gIyD9wyA5aKEve0q31Gi2kwmyWtccpVrQ&sa=X&ved=2ahUKEwjZte70ideJAxV-R2wGHeRHMC4QtKgLegQIHhAB&biw=1920&bih=919&dpr=1#imgrc=TUGwRZpNTxEpWM&imgdii=niM5ShRuXv3s-M
+Operators
+Arithmetic, Bitwise, Reduction, Relational, Logical, Shift
+https://documentation-rp-test.readthedocs.io/en/latest/tutorfpga04.html#operators-precedence
+
 
 systemverilog array
   - Static, Dynamic, Associates, Queue
