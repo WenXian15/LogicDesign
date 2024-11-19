@@ -24,3 +24,8 @@ Link : https://www.reddit.com/r/Verilog/comments/tg506z/reg_array20_vs_reg_array
 
 Verilog conditional hardware based on parameter value
 https://stackoverflow.com/questions/52061466/verilog-conditional-hardware-based-on-parameter-value
+
+Latch Time Borrowing
+https://adaptivesupport.amd.com/s/article/651529?language=en_US
+
+
