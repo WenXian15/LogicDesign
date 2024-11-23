@@ -29,3 +29,13 @@ Latch Time Borrowing
 https://adaptivesupport.amd.com/s/article/651529?language=en_US
 
 
+
+
+
+Source Synchronous Clocking
+https://www.reddit.com/r/FPGA/comments/pei1en/source_synchronous_clocking/
+
+Source Synchronus Interface Timing Closure
+https://www.reddit.com/r/FPGA/comments/1gw632u/source_synchronus_interface_timing_closure/
+
+
