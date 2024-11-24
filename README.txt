@@ -30,7 +30,8 @@ https://adaptivesupport.amd.com/s/article/651529?language=en_US
 
 
 
-
+High-Speed I/O
+==============
 
 Source Synchronous Clocking
 https://www.reddit.com/r/FPGA/comments/pei1en/source_synchronous_clocking/
