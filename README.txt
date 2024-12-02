@@ -11,6 +11,30 @@ https://documentation-rp-test.readthedocs.io/en/latest/tutorfpga04.html#operator
 systemverilog array
   - Static, Dynamic, Associates, Queue
 Example:
+// bit [2:0][7:0] m_data; // Packed
+// bit [15:0] m_mem[10:0]; // Unpacked
+Packed : 
+  -  Total size: 3 bytes (24 bits)
+  -  Often used for hardware reigsters or bus interfaces.
+
+m_data[2] = byte 2 (bits [23:16])
+m_data[1] = byte 1 (bits [15:8])
+m_data[0] = byte 0 (bits [7:0])
+
+Unpacked :
+  -  Contains 11 elements (indexed 10 down to 0).  Each element is 16 bits wide.
+
+// Packed array access
+m_data[2] = 8'hAA;     // Set byte 2
+m_data[1] = 8'hBB;     // Set byte 1
+m_data[0] = 8'hCC;     // Set byte 0
+
+// Unpacked array access
+m_mem[10] = 16'hDEAD;  // Set element 10
+m_mem[0]  = 16'hBEEF;  // Set element 0
+
+
+
 logic [x-1:-0] some_variable [y] // Unpacked
 - There will be x array of width y 
 logic [x][y] some_variable // packed
