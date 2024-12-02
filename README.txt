@@ -28,6 +28,8 @@ https://stackoverflow.com/questions/52061466/verilog-conditional-hardware-based-
 Latch Time Borrowing
 https://adaptivesupport.amd.com/s/article/651529?language=en_US
 
+mac_phy_txdata[8*lane_idx*PHY_NB +: 8*PHY_NB] where PHY_NB = 2
+
 
 
 High-Speed I/O
