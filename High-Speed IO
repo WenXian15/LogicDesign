@@ -1,11 +1,11 @@
-High-Speed I/O
-==============
-
-Source Synchronous Clocking
-https://www.reddit.com/r/FPGA/comments/pei1en/source_synchronous_clocking/
-
-Source Synchronus Interface Timing Closure
-https://www.reddit.com/r/FPGA/comments/1gw632u/source_synchronus_interface_timing_closure/
+Fundamental Concept
+*******************
+1. Differential Signal
+2. System-Synchronous, Source-Synchronous, and Self-Synchronous
+Reference:
+a. https://www.reddit.com/r/FPGA/comments/pei1en/source_synchronous_clocking/
+b. https://www.reddit.com/r/FPGA/comments/1gw632u/source_synchronus_interface_timing_closure/
+3. Clock/Data Recovery
 
 
 Line Encoding Schemes
