@@ -1,0 +1,53 @@
+Fundamental Concept
+*******************
+1. Differential Signal
+2. System-Synchronous, Source-Synchronous, and Self-Synchronous
+Reference:
+  a. https://www.reddit.com/r/FPGA/comments/pei1en/source_synchronous_clocking/
+  b. https://www.reddit.com/r/FPGA/comments/1gw632u/source_synchronus_interface_timing_closure/
+3. Clock/Data Recovery
+
+Builidng block of a SERDES
+**************************
+64B/66B or 8B/10B Encoder => TX FIFO => Scrambler => Output Polarity => Serializer => TXP/TXN
+RXP/RXN => Deserializer => Comma Detect Realign => Decoder /Descrambler => RX Elastic Buffer
+
+• Serializer: Takes n bits of parallel data changing at rate y and transforms them into a serial stream at a rate of n times y.
+• Deserializer: Takes serial stream at a rate of n times y and changes it into parallel data of width n changing at rate y.
+• Rx (Receive) Align: Aligns the incoming data into the proper word boundaries. Several different mechanisms can be used from automatic detection and alignment of a special reserved bit sequence (often called a comma) to user-controlled bit slips.
+• Clock Manager: Manages various clocking needs including clock multiplication, clock division, and clock recovery.
+• Transmit FIFO (First In First Out): Allows for storing of incoming data before transmission.
+• Receive FIFO: Allows for storing of received data before removal; is essential in a system where clock correction is required.
+• Receive Line Interface: Analog receive circuitry includes differential receiver and may include active or passive equalization.
+• Transmit Line Interface: Analog transmission circuit often allows varying drive strengths. It may also allow for pre-emphasis of transitions.
+• Line Encoder: Encodes the data into a more line-friendly format. This usually involves eliminating long sequences of non-changing bits. May also adjust data for an even balance of ones and zeros. 
+• Line Decoder: Decodes from line encoded data to plain data.
+• Clock Correction and Channel Bonding: Allows for correction of the difference between thetransmit clock and the receive clock. Also allows for skew correction between multiple channels.
+
+Line Encoding
+*************
+Objective:
+1. Provide a means of aligning the data into words with a good DC balance on Line.
+2. Provide for implementation of clock correction, block synchronization and channel bonding.
+3. Two main line encoding schemes: Value lookup schemes (8/10b) and self-modifying streams/scramblers
+4. Comma Detection - Comma/COM are unique symbols (K-Characters).  Comma is inserted as a checkpoint.  Protocol will agree on using certain K-Characters as COM.  Data Character (D.x) are used for data.  Notice how TS1/TS2 uses K-character at the begining
+and D-character for other information.
+
+Ordered Sequences such as TS1 and TS2 use COM at the beginning of the sequence.  
+
+Introduction to Packets
+***********************
+Reference Clocking Requirements
+Clock Correction
+  - Differences in PPM between clock will cause missing symbols when the differences are accumulated.
+  - Clock correction Sequence (often same as the idle sequence) is used to compensate for the differences in clock.
+Receive and Transmit Buffers
+Channel Bonding
+  - Absorb skew between Channel (Lane), so that all the lane are aligned.
+Physical Signaling
+Pre-Emphasis
+  - Use to reduce ISI
+Line Equalization
+  - Equalization is an attempt to compensate for differences in impedance/losses relative to frequency.
+
+Bit Error Rate
