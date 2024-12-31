@@ -11,7 +11,7 @@ https://documentation-rp-test.readthedocs.io/en/latest/tutorfpga04.html#operator
 systemverilog array
   - Static, Dynamic, Associates, Queue
 Example:
-// bit [2:0][7:0] m_data; // Packed
+// bit [2:0][7:0] m_data; // Packed - As the name suggest, they are packed together.  
 // bit [15:0] m_mem[10:0]; // Unpacked
 Packed : 
   -  Total size: 3 bytes (24 bits)
