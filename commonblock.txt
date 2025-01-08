@@ -15,3 +15,10 @@ Capture a high pulse and holds i
 Synchronous Logic
 1. Watchdog Timer 
 - Raises an alarm signal if not "pinged" before a given number of cycles have passed since the last ping or since start. This can be used as a simple event timer, or as part of a hardware failsafe.
+
+
+
+Barallel Shifter 
+https://vlsigyan.com/barrel-shifter-verilog-code/
+
+Pipeline slice
